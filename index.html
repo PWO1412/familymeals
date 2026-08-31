@@ -251,6 +251,7 @@ body{
 
 .tip{margin:4px 14px 20px;padding:13px 15px;background:var(--pine);color:#EAF1EB;border-radius:14px;font-size:12.5px;line-height:1.6;}
 .tip b{color:#fff;}
+.footer{text-align:center;font-size:10.5px;color:rgba(255,255,255,.35);padding:18px 14px 6px;}
 </style>
 </head>
 <body>
@@ -319,6 +320,8 @@ function render(){
   if(state.tab==='plan') renderPlan(app, w);
   if(state.tab==='shop') renderShop(app, w);
   if(state.tab==='prep') renderPrep(app, w);
+
+  app.appendChild(el(`<div class="footer">Erstellt am 31.08.2026</div>`));
 }
 
 function renderPlan(app, w){
